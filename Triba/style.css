@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Valorax';
+    src: url('Fonts/Valorax-lg25V.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SuperPixel';
+    src: url('Fonts/SuperPixel-m2L8j.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'VeniteAdoremus';
+    src: url('Fonts/VeniteAdoremus-rgRBA.ttf') format('opentype');
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #fff44f;
+    height: 100vh;
+    
+  }
+
+footer {
+    justify-content: center;
+    align-items: center;
+    background-color: #fff44f;
+    color: #333;;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+}
+
+
+.naslov {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Valorax'; 
+}
+
+h1{
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+}
+
+  
+.dropdown {
+    position: center;
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'VeniteAdoremus', sans-serif;
+    
+}
+
+.dropdown-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+}
+
+.dropdown-button:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-content {
+    max-height: 0; 
+   
+    overflow: hidden; 
+    margin-top: 10px;
+    padding: 0 10px;
+    background-color: #007BFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.4s ease, padding 0.4s ease; 
+}
+
+.dropdown-content.show {
+    max-height: 300px; 
+    padding: 10px; 
+}
+
+.dropdown-button2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+}
+
+.dropdown-button2:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-content2 {
+    max-height: 0; 
+    overflow: hidden; 
+    margin-top: 10px;
+    padding: 0 10px;
+    background-color: #007BFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.4s ease, padding 0.4s ease; 
+}
+
+.dropdown-content2.show {
+    max-height: 300px; 
+    padding: 10px; 
+}
+
+.new-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'VeniteAdoremus', sans-serif;
+}
+
+.new-game button{
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+}
+
+.new-game button:hover {
+    background-color: #0056b3;
+}
+  
+
+.pod-naslov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pod-naslov h2{
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Valorax';
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+canvas {
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    display: none; 
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#gameCanvas {
+    display: none; /* Canvas je skriven dok se ne klikne dugme */
+    background-color: whitesmoke;
+    margin: 20px auto; 
+    border: 1px solid #ccc; /* Dodatni okvir za preglednost */
+}

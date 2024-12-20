@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>TRIBA</title>
+</head>
+<body>
+
+    <div class="naslov">
+        <h1> TRIBA </h1>
+    </div>   
+    
+    <div class="new-game">
+        <a href="game.html"><button> NEW GAME</button></a>
+    </div>
+     
+    
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown()">Rules of the game</button>
+        <div class="dropdown-content" id="dropdownText">
+          <p>
+            The game consists of a grid of m×n points, where m and n are even natural numbers.
+            Two players take turns playing alternately. On each turn, a player selects a 
+            triangle by choosing three points from the grid that do not lie on the same 
+            straight line. The triangles must not intersect, and no two triangles can share a
+            vertex. Triangles can be nested within one another.
+            The game ends when a player can no longer make a move. The player who is unable to 
+            make a move loses. In the diagram below, the side lines represent the color of the 
+            player whose turn it is.
+        </p>
+        </div>
+
+        <button class="dropdown-button2" onclick="toggleDropdown2()">About the project</button>
+        <div class="dropdown-content2" id="dropdownText2">
+            <ul>
+                <li>Course: Web Development</li>
+                <ul>
+                    <li>Professor: Doc. dr. Sead Delalic</li>
+                    <li>Assistant: Iman Bekkaye</li> 
+                </ul>
+                <li>Major: Computer Science</li>
+                <li>Faculty: Faculty of Science, University of Sarajevo</li>
+                <li>Project: Triba game</li>
+                <li>About the Creator</li>
+                <ul>
+                    Dino Fazlic,<br>
+                    Tel: 387603174555<br>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+   
+      
+
+    <footer>
+        <p>© 2024 Dino Fazlić.</p>
+    </footer>
+</body>
+</html>
